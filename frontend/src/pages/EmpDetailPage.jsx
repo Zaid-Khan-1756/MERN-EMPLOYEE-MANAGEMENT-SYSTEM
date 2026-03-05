@@ -122,8 +122,16 @@ const EmpDetailPage = () => {
                   <label className='label'>
                     <span className='label-text'>Department</span>
                   </label>
-                  <input type='text' placeholder='Department' className='input input-bordered' value={emp.Emp_Department} onChange={(e) => 
-                    setEmp({...emp, Emp_Department: e.target.value}) } />
+                  <select type='text' placeholder='Department' className='input input-bordered' value={emp.Emp_Department} onChange={(e) => 
+                    setEmp({...emp, Emp_Department: e.target.value}) }>
+                    <option value="">Select a Department</option>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Finance">Finance</option>
+                    <option value="R&D">R&D</option>
+                    <option value="Legal">Legal</option>
+                  </select>
                 </div>
 
                 {/* EMAIL */}
