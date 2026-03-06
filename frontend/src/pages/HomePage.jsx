@@ -69,14 +69,14 @@ const sortedEmployees = [...filteredEmployees].sort((a, b) => {
       <Navbar />
 
       <div className="filters flex justify-center">
-  <input className="w-full max-w-md px-3 py-3"
+  <input className="input input-bordered w-full pl-10"
     type="text"
     placeholder="Search employee..."
     value={searchTerm}
     onChange={(e) => setSearchTerm(e.target.value)}
   />
 
-  <select value={Emp_Department} onChange={(e) => setEmp_Department(e.target.value)}>
+  <select classname="select select bordered" value={Emp_Department} onChange={(e) => setEmp_Department(e.target.value)}>
     <option value="">All Departments</option>
     <option value="HR">HR</option>
     <option value="IT">IT</option>
@@ -87,6 +87,7 @@ const sortedEmployees = [...filteredEmployees].sort((a, b) => {
   </select>
 
   <select
+  classname="select select bordered"
   value={sortBy}
   onChange={(e) => setSortBy(e.target.value)}
   className="px-4 py-2 border flex justify-center border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500"
