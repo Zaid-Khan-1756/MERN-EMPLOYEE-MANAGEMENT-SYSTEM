@@ -71,7 +71,7 @@ const sortedEmployees = [...filteredEmployees].sort((a, b) => {
       <div className="filters flex justify-center">
   <input className="input input-bordered w-full pl-10"
     type="text"
-    placeholder="Search employee..."
+    placeholder="Search Employee..."
     value={searchTerm}
     onChange={(e) => setSearchTerm(e.target.value)}
   />
