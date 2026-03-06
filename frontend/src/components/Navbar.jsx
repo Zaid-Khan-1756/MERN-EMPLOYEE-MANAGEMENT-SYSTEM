@@ -4,7 +4,7 @@ import { PlusIcon } from "lucide-react";
 const Navbar = () => {
   return (
     <header className="bg-blue-400 shadow-md">
-      <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="w-full mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
 
           <h1 className="text-2xl md:text-3xl font-bold text-white font-mono tracking-wide">
