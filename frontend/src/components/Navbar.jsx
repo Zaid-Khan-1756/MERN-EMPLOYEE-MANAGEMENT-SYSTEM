@@ -1,21 +1,28 @@
-import {Link} from 'react-router'
-import {PlusIcon} from 'lucide-react'
+import { Link } from "react-router";
+import { PlusIcon } from "lucide-react";
 
 const Navbar = () => {
-return (
-    <header className='bg-blue-200 border-b border-base-content/10'>
-    <div className='ms-auto max-w-6xl p-4'>
-        <div className='flex items-center justify-between'>
-            <h1 className='text-4xl font-bold text-primary font-mono tracking-tight'>Employee Management System</h1>
-            <div className='flex items-center gap-4'>
-                <Link to={"/create"} className="btn btn-primary">
-                    <PlusIcon className='size-5' /> <span>Add Employee</span>
-                </Link>
-            </div>
+  return (
+    <header className="bg-blue-400 shadow-md">
+      <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+
+          <h1 className="text-2xl md:text-3xl font-bold text-white font-mono tracking-wide">
+            Employee Management System
+          </h1>
+
+          <Link
+            to={"/create"}
+            className="flex items-center gap-2 bg-white text-blue-400 font-semibold px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition"
+          >
+            <PlusIcon className="size-5" />
+            Add Employee
+          </Link>
+
         </div>
-    </div>
+      </div>
     </header>
-)
-}
+  );
+};
 
 export default Navbar;
